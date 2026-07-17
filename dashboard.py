@@ -15,7 +15,7 @@ st.set_page_config(
     layout="wide"
 )
 
-st.title("🎓 DASHBOARD PHÂN TÍCH KINH TẾ LƯỢNG - TRƯỐNG THPT GP")
+st.title("🎓 DASHBOARD PHÂN TÍCH KINH TẾ LƯỢNG - TRƯỜNG THPT GP")
 st.markdown("---")
 
 # ---------------------------------------------------------------------
