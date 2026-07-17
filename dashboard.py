@@ -84,7 +84,7 @@ st.plotly_chart(fig, use_container_width=True)
 # ---------------------------------------------------------------------
 # MỤC 4: DỰ BÁO
 # ---------------------------------------------------------------------
-st.header("4. Mô phỏng dự báo điểm số")
+st.header("3. Mô phỏng dự báo điểm số")
 c1, c2, c3 = st.columns(3)
 with c1:
     in_age = st.number_input("Tuổi (age):", 15, 22, 17)
