@@ -23,7 +23,7 @@ st.markdown("---")
 # ---------------------------------------------------------------------
 @st.cache_data
 def load_data():
-    df = pd.read_excel("Điểm toán của học sinh trường GP – Dữ liệu đã chọn biến.xlsx")
+    df = pd.read_excel("data.xlsx")
     df['ln_absences'] = np.log(df['absences'] + 1)
     df['ln_absences_squared'] = df['ln_absences']**2
     return df
