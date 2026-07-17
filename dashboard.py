@@ -19,7 +19,7 @@ st.title("🎓 DASHBOARD PHÂN TÍCH KINH TẾ LƯỢNG - TRƯỐNG THPT GP")
 st.markdown("---")
 
 # ---------------------------------------------------------------------
-# ĐỌC VÀ CHUạN BỊ DỦ LIỆU
+# ĐỌC VÀ CHUẨN BỊ DỮ LIỆU
 # ---------------------------------------------------------------------
 @st.cache_data
 def load_data():
@@ -69,7 +69,7 @@ with col4:
 # ---------------------------------------------------------------------
 # MỤC 2: TÁC ĐỘNG BIÊÊ
 # ---------------------------------------------------------------------
-st.header("Ế 2. Mức độ ảnh hưởng của các nhân tố")
+st.header("2. Mức độ ảnh hưởng của các nhân tố")
 coef_df = pd.DataFrame({
     'Nhân tố': model.params.index[1:],
     'Beta': model.params.values[1:],
@@ -95,7 +95,7 @@ with c2:
     in_sup = st.selectbox("Hỗ trợ trường (schoolsup):", ["Không (0)", "Có (1)"])
     in_famsup = st.selectbox("Hỗ trợ gia đình (famsup):", ["Không (0)", "Có (1)"])
 with c3:
-    in_study = st.selectbox("Thối gian học hàng tuần:", ["Dưội 5h", "5-10h (Mức 3)", "Trén 10h"])
+    in_study = st.selectbox("Thối gian học hàng tuần:", ["Dưới 5h", "5-10h (Mức 3)", "Trên 10h"])
     in_higher = st.checkbox("Muốn học cao hơn (higher)", True)
 
 # Chuyển đổi input
@@ -118,6 +118,6 @@ pred_score = max(0.0, min(20.0, pred_score))
 
 st.markdown(f"""
 <div style='background-color:#f0f3f4; padding:20px; border-radius:10px; text-align:center;'>
-    <h2 style='color:#2c3e50;'>ắ ĐIỂM DỰ BÁO: {pred_score:.2f} / 20</h2>
+    <h2 style='color:#2c3e50;'> ĐIỂM DỰ BÁO: {pred_score:.2f} / 20</h2>
 </div>
 """, unsafe_allow_html=True)
