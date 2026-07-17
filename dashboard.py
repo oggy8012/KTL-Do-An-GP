@@ -95,7 +95,7 @@ with c2:
     in_sup = st.selectbox("Hỗ trợ trường (schoolsup):", ["Không (0)", "Có (1)"])
     in_famsup = st.selectbox("Hỗ trợ gia đình (famsup):", ["Không (0)", "Có (1)"])
 with c3:
-    in_study = st.selectbox("Thối gian học hàng tuần:", ["Dưới 5h", "5-10h (Mức 3)", "Trên 10h"])
+    in_study = st.selectbox("Thời gian học hàng tuần:", ["Dưới 5h", "5-10h (Mức 3)", "Trên 10h"])
     in_higher = st.checkbox("Muốn học cao hơn (higher)", True)
 
 # Chuyển đổi input
